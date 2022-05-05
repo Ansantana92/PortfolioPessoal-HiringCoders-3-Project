@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/678de347c5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Meu Site</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="Images/AnsantanaLogo.png" alt="Andrei Logo">
+        <ul>
+            <li>
+                <a target="_blank" href="https:github.com/ansantana92/">Github</a>
+            </li> 
+            <li>
+                <a target="_blank" href="mailto:teste@teste.com">Email</a>
+            </li>
+            <li>
+                <a target="_blank" href="wa.me/119999999">Whatsapp</a>
+            </li>
+        </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Andrei Santana</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            
+            <div onclick='displayAbout()' id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            
+            <div style="display: none;" id="about">
+                <p>
+                    My name is Andrei Santana and I'm a web development enthusiast, I developed this project during Hiring Coders which was promoted by Gama Academy in partnership with VTEX-IO.</p>
+            </div>
+            
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)" style="text-align:center">
+                </form>
+                <button>Enviar</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            var display = document.getElementById('about');
+            arrow.classList.toggle('rotate');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
